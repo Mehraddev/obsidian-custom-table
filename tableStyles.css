@@ -21,8 +21,7 @@ table thead tr th {
 cssclass: 
 ---
 
-2- then add tags like:
-cssclass: tableClass1, hackClass2, userClass3, etc
+2- then add tags
 
 tags that you can use:
 <ThemeName> wideTable fixedFc wideFc leftAlign
