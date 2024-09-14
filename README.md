@@ -1,4 +1,4 @@
-this is a custom css snippet to ##**make your tables in obsidian look better**
+this is a custom css snippet to **make your tables in obsidian look better**
 
 add it:
 1- go to obsidian > setting > appearance > css snippets > click on the folder icon
