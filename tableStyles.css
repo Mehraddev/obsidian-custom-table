@@ -1,0 +1,174 @@
+/* Any credit for implementation and idea belongs to https://www.youtube.com/@beingpax    */
+/* Custom fonts. Comment or change as required    */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,300,700');
+
+/* left align headers */
+table thead tr th {
+  text-align: left;
+}
+
+.atom-darke {
+  font-family: 'SUSE', sans-serif;
+}
+
+/*
+
+
+
+
+
+======customization======
+
+1- paste this in a new note in obsidian:
+---
+cssclass: 
+---
+
+2- then add tags like:
+cssclass: tableClass1, hackClass2, userClass3, etc
+
+tags that you can use:
+<ThemeName> wideTable fixedFc wideFc leftAlign
+
+
+
+
+*/
+
+/* Make tables width same as default note width   */
+.wideTable table {
+  min-width: 100%;
+}
+
+/* Left align mandatory                           */
+.leftAlign th,
+.leftAlign td {
+  text-align: left !important;
+}
+
+/* 1st cell short text, 2nd th bigger text        */
+.fixedFc thead tr th:first-child,
+.fixedFc tbody tr td:first-child {
+  width: 8em;
+  min-width: 8em;
+  max-width: 8em;
+  word-break: break-all;
+}
+.fixedFc th:nth-child(2) {
+  padding: 9px 20px;
+  font-size: 21px;
+}
+.fixedFc td:nth-child(2),
+.fixedFc tr > td:last-of-type {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 17em;
+}
+
+/* 1st cell big text, 2nd small.                  */
+.wideFc td:nth-child(1),
+.wideFc tr > td:last-of-type {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 36em;
+}
+
+/* If you wanna change table margin, do it here   */
+.customMargin table {
+  margin: 25px 0;
+}
+
+/*  atom-dark  */
+.atom-dark table {
+  border-radius: 10px;
+  font-size: 1em;
+  overflow: hidden;
+  width: auto;
+}
+.atom-dark thead {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.atom-dark thead th,
+.atom-dark thead tr,
+.atom-dark th {
+  background-color: rgba(0, 0, 0, 0);
+}
+.atom-dark th {
+  letter-spacing: 0.3px;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.atom-dark table > thead > tr > th {
+  border: 0px solid rgba(0, 0, 0, 0.1);
+}
+.atom-dark tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.atom-dark tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.atom-dark td {
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.02);
+  padding: 5px;
+}
+.atom-dark thead th:hover,
+.atom-dark thead tr:hover,
+.atom-dark th:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.atom-dark tbody tr:hover td,
+.atom-dark tbody tr:hover td a {
+  background-color: rgba(0, 0, 0, 0.02);
+  color: fff;
+}
+
+/*  atom-light  */
+.atom-light table {
+  border-radius: 10px;
+  font-size: 1em;
+  overflow: hidden;
+  width: auto;
+}
+.atom-light thead {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.atom-light thead th,
+.atom-light thead tr,
+.atom-light th {
+  background-color: rgba(255, 255, 255, 0);
+}
+.atom-light th {
+  letter-spacing: 0.3px;
+  border: 0px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #000000;
+}
+.atom-light table > thead > tr > th {
+  border: 0px solid rgba(255, 255, 255, 0.1);
+}
+.atom-light tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.atom-light tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.atom-light td {
+  border: 0px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.02);
+  padding: 5px;
+}
+.atom-light thead th:hover,
+.atom-light thead tr:hover,
+.atom-light th:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+.atom-light tbody tr:hover td,
+.atom-light tbody tr:hover td a {
+  background-color: rgba(255, 255, 255, 0.02);
+  color: fff;
+}
